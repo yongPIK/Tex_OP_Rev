@@ -109,7 +109,7 @@ where the summation runs over all possible patterns of $\pi_j^{Y}(\tau)$. Note t
 \begin{equation}  \label{eq:globalH}
 H_{X \to Y}(\tau) = \sum_{i=1}^{D!} p(\pi_i^{X}) H_{X \to Y}^{\pi_i}(\tau), 
 \end{equation}
-which we call global ordinal pattern co-occurrence entropy. {\color{red} We note the difference with the literature in \cite{LiNI2010}. }
+which we call global ordinal pattern co-occurrence entropy. 
 
 For a memoryless and stationary stochastic process, we may expect $p(\pi_i^{X} )= \frac{1}{D!}$ for any pattern order $D$. Accordingly, the local (per-node) co-occurrence entropy of Eq. \eqref{eq:localH} simplifies as 
 \begin{equation}
@@ -127,7 +127,7 @@ which appears to be closer to the Granger-type (predictive) idea of causality th
 \end{equation}
 where the summation runs over all patterns $\pi_i^{X}$ of $X$. 
 
-{\color{red}The computation of KLD shares much similarity with that of the symbolic transfer entropy \cite{Staniek2008}, showing difference in choosing the parameter $\tau$.  In \cite{Staniek2008}, $\tau$ is treated as an algorithmic parameter which had been suggested as $\tau = 1$. Furthermore, it has been assumed that the empirical choice of $\tau = 1$ is always applicable if a meaningful natural sampling rate of time series is a available. From the descriptions above, it is clear that our method interprets $\tau$ differently, considering to extract the proper coupling delay $\tau$ explicitly by treating it as a dynamical unknown variable. }
+{\color{red} We note that the computation of $H_{X\to Y}(\tau)$ is similar with that has been proposed in  \cite{LiNI2010}, while the KLD is similar with the symbolic transfer entropy \cite{Staniek2008}. The main difference is the parameter $\tau$.  In \cite{Staniek2008}, $\tau$ is treated as an algorithmic parameter which had been suggested as $\tau = 1$. Furthermore, it has been assumed that the empirical choice of $\tau = 1$ is always applicable if a meaningful natural sampling rate of time series is a available. From the descriptions above, it is clear that our method interprets $\tau$ differently, considering to extract the proper coupling delay $\tau$ explicitly by treating it as a dynamical unknown variable. }
 
 \section{Numerical examples} \label{sec:res}
 In this section, we demonstrate that the time-lagged ordinal pattern co-occurrence complexity measures introduced in the previous section can capture causal interactions in both, unidirectional and bidirectional coupling configurations. In order to illustrate this, we consider examples from two typical classes of time-discrete dynamical systems: simple stochastic processes and chaotic maps. 
@@ -257,7 +257,7 @@ Qualitatively equivalent results have been obtained for the two coupled chaotic 
 \caption{(Color online) Same as in Fig. \ref{fig:sampleSizeBCDE} but for the two coupled H\'enon maps at four different coupling strengths $\mu$: (a) $\mu=0.2$ (b) $0.3$, (c) $0.4$, and (d) $0.5$. The blue lines show the behavior at the delay corresponding to maximum KLD, while the black ones show the values for a non-causal delay of $\tau=10$. \label{fig:sampleSizeHenon}}
 \end{figure}
 
-Taken together, we conclude that the small non-zero KLD values at non-causal delays are indeed due to the finite length of the studied time series. This suggests a straightforward strategy for obtaining confidence bounds for the computed KLD values by comparing them with those for surrogate data constructed by shuffling or bootstrapping the underlying time series individually. We leave a more detailed exploration of this idea as a subject of future work.
+Taken together, we conclude that the small non-zero {\color{red}complexity} values at non-causal delays are indeed due to the finite length of the studied time series. This suggests a straightforward strategy for obtaining confidence bounds for the computed {\color{red}complexity} values by comparing them with those for surrogate data constructed by shuffling or bootstrapping the underlying time series individually. We leave a more detailed exploration of this idea as a subject of future work.
 
 
 \section{Real-world example}  \label{sec:exp}
@@ -274,7 +274,7 @@ Taking the two temperature series as described above, we construct the correspon
 \label{fig:stdHeqTemp}}
 \end{figure}
 
-In addition to the identification of the expected interaction delay between both temperature records, we have again studied the effect of the time series length on the estimated OPTN based coupling indicators for the example of KLD. For this purpose, pairs of time series values have been selected at random to form subsamples of arbitrary sizes. This kind of cross-validation procedure demonstrates the saturation of the obtained estimates at sufficiently large sample sizes (Fig.~\ref{fig:stdHeqTemp}(d)). Most importantly, the KLD values at the optimal interaction delay of $\tau=1$ day are consistently larger than those at any other delay that would not be justified by the underlying meteorological processes. However, there is a non-zero statistical relationship between both records even at a delay of 20 days, which is manifested in the saturation of KLD for this delay with increasing time series length $N$ instead of a gradual decrease as previously observed in our numerical model examples.
+In addition to the identification of the expected interaction delay between both temperature records, we have again studied the effect of the time series length on the estimated OPTN based coupling indicators for the example of KLD. For this purpose, pairs of time series values have been selected at random to form subsamples of arbitrary sizes. This kind of cross-validation procedure demonstrates the saturation of the obtained estimates at sufficiently large sample sizes (Fig.~\ref{fig:stdHeqTemp}(d)). Most importantly, the KLD values at the optimal interaction delay of $\tau=1$ day are consistently larger than those at any other delay that would not be justified by the underlying meteorological processes. However, there is a non-zero statistical relationship between both records even at a delay of 20 days, which is manifested in the saturation of KLD for this delay with increasing time series length $N$ instead of a gradual decrease as previously observed in our numerical model examples. {\color{red}Similar results have been obtained for $\sigma_{X\to Y}$ and $H_{X\to Y}$, as shown in Figs. S5 and S6 in SM. }
 
 \section{Conclusions} \label{sec:con}
 
