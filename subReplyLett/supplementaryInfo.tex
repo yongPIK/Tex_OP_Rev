@@ -1,0 +1,51 @@
+\documentclass[aps,pre,superscriptaddress,floats,11pt]{revtex4}
+% \documentclass[aps,pre,superscriptaddress,11pt]{revtex4-1}
+\usepackage{amsfonts,amssymb,amsmath,times}
+\usepackage{graphicx,multirow}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{pgffor}
+\usepackage{ifthen}
+\usepackage{morefloats}
+\usepackage[floats]{preview}
+% \usepackage{longtable,lscape,subfigure}
+\usepackage{array} % for extrarowheight
+\setlength{\extrarowheight}{1.5pt}
+% \usepackage{placeins}
+ 
+\linespread{1.5}
+
+\begin{document}
+
+\title{Supplementary Materials: \\ Ordinal partition transition network based complexity measures for inferring coupling direction and delay from time series}
+
+\date{\today}
+
+\maketitle
+
+% {\bf{SI Text: }}
+\renewcommand{\thepage}{SM-\arabic{page}}  
+\renewcommand{\thesection}{SM-\Roman{section}}   
+\renewcommand{\theequation}{S\arabic{equation}}  
+\renewcommand{\thetable}{S\arabic{table}}   
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\section{Sample size effects on $\sigma_{X\to Y}$}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigma_lengthBCDE.eps}
+\caption{(Color online) Double logarithmic plot of the dependence of $\sigma_{X\to Y}(\tau)$ on the sample size $N$ for the optimal (causal) lags (blue/red) and some non-causal lag (black) for the four cases of coupled linear-stochastic systems: (a) Eq.~\eqref{eq:B} (unidirectional), (b) Eq.~\eqref{eq:C} (unidirectional), (c) Eq.~\eqref{eq:D} (symmetric bidirectional), (d) Eq.~\eqref{eq:E} (asymmetric bidirectional). In (c,d), the values for both causal delays are shown. Errorbars correspond to the standard deviation (linear scale) over 20 independent realizations.  \label{fig:sampleSizeBCDEsigma}}
+\end{figure}
+
+
+\section{Sample size effects on co-occurrence entropy $H_{X\to Y}$}. 
+It is expected that the co-occurrence entropy $H_{X \to Y} \approx 6.9$ when $D = 6$ for two series of ordinal patterns that are obtained from two independent identically distributed noise processes. Considering this fact, we calculate the distance between $H_{X \to Y}$ and the expected value of 6.9 ($D = 6$ is used), which yields similar asymptotical results as that of $\sigma_{X\to Y}$ and KLD. Namely, at positions of non-causal delays, zero values are expected asymptotically, while non-zero values appear at the positions of causal delays. 
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/entropyH_lengthBCDE.eps}
+\caption{(Color online) The caption is the same as Fig.~\ref{fig:sampleSizeBCDEsigma}, but for the co-occurrence entropy $H_{X\to Y}(\tau)$. \label{fig:sampleSizeBCDEentropy}}
+\end{figure}
+
+
+\end{document}

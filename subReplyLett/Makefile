@@ -11,10 +11,10 @@
 
 #-- Source Files for LaTeX tup -------------------------------
 #... Specify the chapter to compile here or 
-TEXSRC	=	summary_changes.tex
+TEXSRC	=	supplementaryInfo.tex
 
 SRCS	  =	$(TEXSRC)
-TARGET     =	summary_changes.pdf
+TARGET     =	supplementaryInfo.pdf
 SRCNAME	  = 	${TARGET:.pdf=}
 
 #-- Software Environment Setup -------------------------------
@@ -39,5 +39,5 @@ full_revision : $(SRCS)
 	$(DVIPS) -o $(TARGET) $(SRCNAME)       # Create .ps from .dvi
 	$(PDF) $(SRCNAME)			 # Create .pdf from .dvi
 clean :
-	-rm  *.dvi *.log *.aux
+	-rm  *.dvi *.log *.aux *Notes.bib
 
