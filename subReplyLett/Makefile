@@ -11,10 +11,12 @@
 
 #-- Source Files for LaTeX tup -------------------------------
 #... Specify the chapter to compile here or 
-TEXSRC	=	supplementaryInfo.tex
+#TEXSRC	=	supplementaryInfo.tex
+TEXSRC  =	summary_changes.tex
 
 SRCS	  =	$(TEXSRC)
-TARGET     =	supplementaryInfo.pdf
+#TARGET     =	supplementaryInfo.pdf
+TARGET	  =	summary_changes.pdf
 SRCNAME	  = 	${TARGET:.pdf=}
 
 #-- Software Environment Setup -------------------------------

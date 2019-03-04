@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{44}%
+\begin{thebibliography}{45}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -595,4 +595,15 @@
   https://doi.org/10.1016/S0378-4371(02)01509-1} {\bibfield  {journal}
   {\bibinfo  {journal} {Physica A}\ }\textbf {\bibinfo {volume} {320}},\
   \bibinfo {pages} {601 -- 610} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Barnston}\ and\ \citenamefont
+  {Livezey}(1987)}]{Barnston1987}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Barnston}}\ and\ \bibinfo {author} {\bibfnamefont {R.~E.}\ \bibnamefont
+  {Livezey}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Classification,
+  seasonality and persistence of low-frequency atmospheric circulation
+  patterns},}\ }\href {\doibase
+  10.1175/1520-0493(1987)115<1083:CSAPOL>2.0.CO;2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Mon. Wea. Rev.}\ }\textbf {\bibinfo {volume} {115}},\
+  \bibinfo {pages} {1083--1126} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
 \end{thebibliography}%

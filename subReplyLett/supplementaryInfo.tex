@@ -38,14 +38,14 @@
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigma_lengthBCDE.eps}
-\caption{(Color online) Double logarithmic plot of the dependence of $\sigma_{X\to Y}(\tau)$ on the sample size $N$ for the optimal (causal) lags (blue/red) and some non-causal lag (black) for the four cases of coupled linear-stochastic systems: (a) Eq. 1 (unidirectional), (b) Eq. 9 (unidirectional), (c) Eq. 10 (symmetric bidirectional), (d) Eq. 11 (asymmetric bidirectional). In (c,d), the values for both causal delays are shown. Errorbars correspond to the standard deviation (linear scale) over 20 independent realizations.  \label{fig:sampleSizeBCDEsigma}}
+\caption{(Color online) Double logarithmic plot of the dependence of $\sigma_{X\to Y}$ on the sample size $N$ for the optimal (causal) lags (blue/red) and some non-causal lag (black) for the four cases of coupled linear-stochastic systems: (a) Eq. 1 (unidirectional), (b) Eq. 9 (unidirectional), (c) Eq. 10 (symmetric bidirectional), (d) Eq. 11 (asymmetric bidirectional). In (c,d), the values for both causal delays are shown. Errorbars correspond to the standard deviation (linear scale) over 20 independent realizations.  \label{fig:sampleSizeBCDEsigma}}
 \end{figure}
 
 \item Coupled Henon maps (Fig. \ref{fig:sampleSizeHenonsigma})
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigma_lengthHenon.eps}
-\caption{(Color online) Same as in Fig. \ref{fig:sampleSizeBCDE} but for the two coupled H\'enon maps at four different coupling strengths $\mu$: (a) $\mu=0.2$ (b) $0.3$, (c) $0.4$, and (d) $0.5$. The blue lines show the behavior at the delay corresponding to maximum KLD, while the black ones show the values for a non-causal delay of $\tau=10$. \label{fig:sampleSizeHenonsigma}}
+\caption{(Color online) Same as in Fig. \ref{fig:sampleSizeBCDEsigma} but for the two coupled H\'enon maps at four different coupling strengths $\mu$: (a) $\mu=0.2$ (b) $0.3$, (c) $0.4$, and (d) $0.5$. The blue lines show the behavior at the delay corresponding to maximum $\sigma_{X\to Y}$, while the black ones show the values for a non-causal delay of $\tau=10$. \label{fig:sampleSizeHenonsigma}}
 \end{figure}
 
 
@@ -69,4 +69,13 @@ It is expected that the co-occurrence entropy $H_{X \to Y} \approx 6.9$ when $D 
 \end{figure}
 
 \end{enumerate}
+
+
+\section{Sample size effects on temperature records}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigentropy_lengthTemp.eps}
+\caption{(Color online) (a) Dependence of $\sigma$ and, respectively, (b) $H$ on the sample length $N$ at the optimal delay ($\tau=1$ day, blue) and some arbitrarily chosen large delay ($\tau=20$ days, black). \label{fig:sampleSizeTempentropy}}
+\end{figure}
+
 \end{document}
