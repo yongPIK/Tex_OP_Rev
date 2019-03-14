@@ -572,16 +572,14 @@
   https://doi.org/10.1016/j.neuroimage.2010.05.003} {\bibfield  {journal}
   {\bibinfo  {journal} {NeuroImage}\ }\textbf {\bibinfo {volume} {52}},\
   \bibinfo {pages} {497 -- 507} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Schreiber}\ and\ \citenamefont
-  {Schmitz}(2000)}]{Schreiber2000}%
+\bibitem [{\citenamefont {Schreiber}(2000)}]{schreiber_prl2000}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Schreiber}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Schmitz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Surrogate time
-  series}},}\ }\href {\doibase 10.1016/S0167-2789(00)00043-9} {\bibfield
-  {journal} {\bibinfo  {journal} {Physica D}\ }\textbf {\bibinfo {volume}
-  {142}},\ \bibinfo {pages} {346--382} (\bibinfo {year} {2000})}\BibitemShut
-  {NoStop}%
+  {Schreiber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Measuring
+  Information Transfer}},}\ }\href {\doibase 10.1103/PhysRevLett.85.461}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {85}},\ \bibinfo {pages} {461--464} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Staniek}\ and\ \citenamefont
   {Lehnertz}(2008)}]{Staniek2008}%
   \BibitemOpen
