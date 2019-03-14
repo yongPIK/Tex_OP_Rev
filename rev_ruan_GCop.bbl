@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{45}%
+\begin{thebibliography}{47}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -452,6 +452,17 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Philos. Trans. R. Soc. A Math.
   Phys. Eng. Sci.}\ }\textbf {\bibinfo {volume} {375}},\ \bibinfo {pages}
   {20160292} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Martínez}, \citenamefont {Herrera-Diestra},\ and\
+  \citenamefont {Chavez}(2018)}]{Martinez2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont
+  {Martínez}}, \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Herrera-Diestra}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Chavez}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Detection of
+  time reversibility in time series by ordinal patterns analysis},}\ }\href
+  {\doibase 10.1063/1.5055855} {\bibfield  {journal} {\bibinfo  {journal}
+  {Chaos}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages} {123111}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2017)\citenamefont {Zhang},
   \citenamefont {Zhou}, \citenamefont {Tang}, \citenamefont {Guo},
   \citenamefont {Small},\ and\ \citenamefont {Zou}}]{zhangSciRep2017}%
@@ -561,6 +572,16 @@
   https://doi.org/10.1016/j.neuroimage.2010.05.003} {\bibfield  {journal}
   {\bibinfo  {journal} {NeuroImage}\ }\textbf {\bibinfo {volume} {52}},\
   \bibinfo {pages} {497 -- 507} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schreiber}\ and\ \citenamefont
+  {Schmitz}(2000)}]{Schreiber2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Schreiber}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Schmitz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Surrogate time
+  series}},}\ }\href {\doibase 10.1016/S0167-2789(00)00043-9} {\bibfield
+  {journal} {\bibinfo  {journal} {Physica D}\ }\textbf {\bibinfo {volume}
+  {142}},\ \bibinfo {pages} {346--382} (\bibinfo {year} {2000})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Staniek}\ and\ \citenamefont
   {Lehnertz}(2008)}]{Staniek2008}%
   \BibitemOpen
