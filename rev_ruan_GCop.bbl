@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{47}%
+\begin{thebibliography}{49}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -614,15 +614,41 @@
   https://doi.org/10.1016/S0378-4371(02)01509-1} {\bibfield  {journal}
   {\bibinfo  {journal} {Physica A}\ }\textbf {\bibinfo {volume} {320}},\
   \bibinfo {pages} {601 -- 610} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Barnston}\ and\ \citenamefont
-  {Livezey}(1987)}]{Barnston1987}%
+\bibitem [{\citenamefont {Hannachi}, \citenamefont {Woollings},\ and\
+  \citenamefont {Fraedrich}(2012)}]{Hannachi2012}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
-  {Barnston}}\ and\ \bibinfo {author} {\bibfnamefont {R.~E.}\ \bibnamefont
-  {Livezey}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Classification,
-  seasonality and persistence of low-frequency atmospheric circulation
-  patterns},}\ }\href {\doibase
-  10.1175/1520-0493(1987)115<1083:CSAPOL>2.0.CO;2} {\bibfield  {journal}
-  {\bibinfo  {journal} {Mon. Wea. Rev.}\ }\textbf {\bibinfo {volume} {115}},\
-  \bibinfo {pages} {1083--1126} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hannachi}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Woollings}},
+  \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Fraedrich}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {The north atlantic jet
+  stream: a look at preferred positions, paths and transitions},}\ }\href
+  {\doibase 10.1002/qj.959} {\bibfield  {journal} {\bibinfo  {journal} {Quart.
+  J. R. Meteorol. Soc.}\ }\textbf {\bibinfo {volume} {138}},\ \bibinfo {pages}
+  {862--877} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Esteban}, \citenamefont {Martin-Vide},\ and\
+  \citenamefont {Mases}(2006)}]{Esteban2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Esteban}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Martin-Vide}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Mases}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Daily
+  atmospheric circulation catalogue for western Europe using multivariate
+  techniques}},}\ }\href {\doibase 10.1002/joc.1391} {\bibfield  {journal}
+  {\bibinfo  {journal} {Int. J. Climatol.}\ }\textbf {\bibinfo {volume} {26}},\
+  \bibinfo {pages} {1501--1515} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Koscielny–-Bunde}}\ \emph
+  {et~al.}(1998)\citenamefont {{Koscielny–-Bunde}}, \citenamefont {Roman},
+  \citenamefont {Bunde}, \citenamefont {Havlin},\ and\ \citenamefont
+  {Schellnhuber}}]{Bunde1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Koscielny–-Bunde}}}, \bibinfo {author} {\bibfnamefont {H.~E.}\
+  \bibnamefont {Roman}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bunde}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Havlin}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Schellnhuber}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Long-range power-law
+  correlations in local daily temperature fluctuations},}\ }\href {\doibase
+  10.1080/13642819808205026} {\bibfield  {journal} {\bibinfo  {journal} {Phil.
+  Mag. B}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo {pages} {1331--1340}
+  (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
 \end{thebibliography}%
