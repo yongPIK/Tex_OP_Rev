@@ -47,26 +47,19 @@ Y. J. Ruan, R.V. Donner, S. G. Guan, and Y. Zou
 
 \begin{center}
 \begin{minipage}[c]{0.9\textwidth}
-We thank the referee for pointing these references, which have been properly cited in the revision. We agree that our measures have much similarities with those that have been pointed by the referee, but by the same time, we wish to emphasize the difference that has been included in the revision: 
+We thank the referee for pointing these references, which have been properly cited in the revision. We agree that our measures do have certain similarities with those that have been pointed by the referee. Yet, at the same time, there are also important conceptual differences that have been explained in detail in our revised manuscript. 
 
 \vspace{0.5cm}
-The second complexity measure $H_{X \to Y}(\tau)$ and the third complexity measure KLD indeed shows much similarity with the method proposed by Li et al, and respectively, the symbolic transfer entropy as proposed by Staniek and Lehnertz. However, the conceptional difference is the following. The time delayed conditional mutual information quantifies the interaction information from $X$ to $Y$ by the difference between $p(\pi_j^{Y}(\tau); \pi_j^{Y} | \pi_i^{X})$  and $p(\pi_j^{Y}(\tau); \pi_j^{Y})$. On the other hand, the transfer entropy characterizes the coupling by the amount of uncertainty reduced in future values of $\pi_j^{Y}(\tau)$ knowing the past values of $\pi_j^{Y}$ only if $\pi_i^{X}$ would be the possible causal effect. More specifically, the information transfer from $X$ to $Y$ is computed by the divergence between two probabilities of $p(\pi_j^{Y}(\tau) | \pi_j^{Y}, \pi_i^{X})$  and $p(\pi_j^{Y}(\tau) | \pi_j^{Y})$. 
-
-\vspace{0.5cm}
-Furthermore, there is much difference with the choice of parameter $\tau$. In the reference of Li et al, $\tau$ is suggested not to be less than the embedding dimension $D$ following the traditional way of computing conditional mutual information. On the other hand, in the reference of Staniek et al, $\tau$ is treated as an algorithmic parameter which had been suggested as $\tau = 1$. Furthermore, it has been assumed that the empirical choice of $\tau = 1$ is always applicable if a meaningful natural sampling rate of time series is a available. However, our method interprets $\tau$ differently, considering to extract the proper coupling delay $\tau$ explicitly by treating it as a dynamical unknown variable. 
-
-\vspace{0.6cm}
-We have included the discussion in the revision when introducing the complexity measure. 
+In a nutshell, regarding their general form, both $H_{X \to Y}(\tau)$ and KLD resemble the pattern conditional mutual information (PCMI) proposed by Li et al, as well as the more general symbolic transfer entropy (STE) as proposed by Staniek and Lehnertz. However, the latter two measures are designed to quantify causality in the predictive (Granger) sense and therefore involve conditions on the previous patterns in both, $X$ and $Y$. In turn, our measures condition only on the pattern exhibited by the second variable and, hence, do not quantify predictive causality, but simply co-occurrence. Another difference is the interpretation of the parameter $\tau$, which is used in our measures as a variable to perform explorative analyses as opposed to a fixed algorithmic parameter in PCMI and STE. We have clarified these points in great detail in a new dedicated subsection of our revised manuscript. 
 \end{minipage}
 \end{center}
-
 
 \noindent
 {\sf In the abstract and the main text, OPTN is defined as an abbreviation for two different phrases. In the abstract, it comes from ordinal pattern transition networks, while in the main text, it comes from ordinal partition transition networks. Please define the abbreviation by one of them. }
 
 \begin{center}
 \begin{minipage}[c]{0.9\textwidth}
-In the revision, we use of the acronym for OPTN as ordinal partition transition network, which keeps the consistency with the literature. This has been corrected for both the abstract and the main text. 
+In the revision, we use of the acronym for OPTN as ordinal partition transition network, which keeps the consistency with the literature. This has been corrected in both, the abstract and the main text. 
 \end{minipage}
 \end{center}
 
@@ -94,7 +87,7 @@ We thank the referee for the overall positive evaluation on our manuscript.
 
 \begin{center}
 \begin{minipage}[c]{0.9\textwidth}
-This is indeed a nice comment. In the very beginning, we plan to include the error bars in all figures. However, we show in this reply letter, these error bars are really invisible even though we have magnified by 1000 times as shown in Figs. \ref{fig:stdHeqB} - \ref{fig:stdHeqE}. Later we decided not to include the error bars in the manuscript since they do not provide additional information. We have clarified the details for the numerical results and suggest not to include the plots with error bars.
+This is indeed a relevant comment. In the very beginning, we had planned to include the error bars in all figures. However, as we show in this reply letter in Figs.~\ref{fig:stdHeqB} - \ref{fig:stdHeqE}, the resulting error bars (i.e., standard deviations among ensemble members) of all considered measures are practically invisible. Therefore, we have decided not to include the error bars in the manuscript since they do not provide additional information. We accordingly suggest not to include the plots with error bars in the main manuscript, and have instead added a corresponding note during our revision.
 
 \end{minipage}
 \end{center}
@@ -102,28 +95,28 @@ This is indeed a nice comment. In the very beginning, we plan to include the err
 	\centering
 	\includegraphics[width=0.5\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/errorbarE_B.eps}
 %	\includegraphics[width=\columnwidth]{KL_B.eps}
-\caption{(Color online) Values of three ordinal pattern co-occurrence complexity measures in dependence on the mutual delay $\tau$ for realizations of Eq. (1): (a,b) $\sigma_{X\to Y}(\tau)$, (c,d) $H_{X \to Y}(\tau)$, (e,f) $\text{KLD}(\tau)$. (a,c,e) show the results for realizations from the linear model, while (b,d,f) correspond to the nonlinear transformation of the first subsystem as described in the text. The vertical red dashed lines indicate the values for vanishing mutual delay ($\tau=0$). {\color{red}Note that the error bars have been enlarged by 1000 times.} \label{fig:stdHeqB}}
+\caption{Values of three ordinal pattern co-occurrence complexity measures in dependence on the mutual delay $\tau$ for realizations of Eq.~(1): (a,b) $\sigma_{X\to Y}(\tau)$, (c,d) $H_{X \to Y}(\tau)$, (e,f) $\text{KLD}(\tau)$. (a,c,e) show the results for realizations from the linear model, while (b,d,f) correspond to the nonlinear transformation of the first subsystem as described in the text. The vertical red dashed lines indicate the values for vanishing mutual delay ($\tau=0$). Note that the error bars have been magnified by a factor of 1,000 to become visible at all. \label{fig:stdHeqB}}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/errorbarE_C.eps}
 %	\includegraphics[width=\columnwidth]{KL_C.eps}
-\caption{(Color online) Same as in Fig.~\ref{fig:stdHeqB} but for Eq. (10). {\color{red}Note that the error bars have been enlarged by 1000 times.} \label{fig:stdHeqC}}
+\caption{Same as in Fig.~\ref{fig:stdHeqB} but for Eq.~(10). Note that the error bars have been magnified by a factor of 1,000 to become visible at all.\label{fig:stdHeqC}}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/errorbarE_D.eps}
 %	\includegraphics[width=\columnwidth]{KL_D.eps}
-\caption{(Color online) Same as in Fig.~\ref{fig:stdHeqB} but for Eq. (11).  {\color{red}Note that the error bars have been enlarged by 1000 times.} \label{fig:stdHeqD}}
+\caption{Same as in Fig.~\ref{fig:stdHeqB} but for Eq.~(11).  Note that the error bars have been magnified by a factor of 1,000 to become visible at all.\label{fig:stdHeqD}}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/errorbarE_E.eps}
 %	\includegraphics[width=\columnwidth]{KL_E.eps}
-\caption{(Color online) Same as in Fig.~\ref{fig:stdHeqD} but for Eq. (12). The two employed delays of $\tau = -1$ and $\tau = 2$ are additionally highlighted by vertical blue dashed lines. {\color{red}Note that the error bars have been enlarged by 1000 times.}\label{fig:stdHeqE}}
+\caption{Same as in Fig.~\ref{fig:stdHeqD} but for Eq.~(12). The two employed delays of $\tau = -1$ and $\tau = 2$ are additionally highlighted by vertical blue dashed lines. Note that the error bars have been magnified by a factor of 1,000 to become visible at all.\label{fig:stdHeqE}}
 \end{figure}
 
 
@@ -135,23 +128,17 @@ Fig. 11 shows results for an experimental situation where the available data siz
 
 \begin{center}
 \begin{minipage}[c]{0.9\textwidth}
-We have clarified the motivations of KLD measures in the main body of the manuscript in the revision. The main reason is that the KLD measure is more statistically motivated which may not be subjected to the marginal distributions of ordinal patterns. This is expected from the computations of probabilities. However, the other two of $\sigma_{X\to Y}$ and $H_{X\to Y}$ are empirical. 
+We have clarified the motivations of KLD measures in the main body of the manuscript in the revision. The main reason for focusing on KLD only has been that this measure is by construction not affected by non-uniform marginal distributions of ordinal pattern frequencies. However, the other two measures $\sigma_{X\to Y}$ and $H_{X\to Y}$ may differ from theor theoretical limit values for uncoupled processes in case of non-uniform distributions. 
 \vspace{0.6cm}
 
-Anyway, from the viewpoint of numerical studies, We have obtained consistent results for all measures of KLD and $\sigma_{X\to Y}$ and co-occurrence complexity entropy $H_{X\to Y}$. In a word, all measures show asymptotical convergences to zero values for uncoupled systems, while positive non-zero values. 
-\vspace{0.6cm}
-
-We note that, together with the revision, we provide supplementary material file containing all results of finite size effects. Rather similar results have been obtained. 
-\vspace{0.6cm}
-
-We have included the discussion as suggested, in particular the results are reliable if time series length larger than 10000. 
+In our numerical studies, we have obtained consistent results for all three complexity measures, which show asymptotic convergences towards their expected values for uncoupled systems. Along with our revised manuscript, we now provide some supplementary material file containing additional results on the finite size effects of the two other measures. Moreover, we have included a corresponding discussion as suggested, in particular on the fact that the obtained numerical results appear reliable only if time series of lengths larger than 10,000 are considered. This rather slow convergence can be understood by the very large number of ordinal patterns considered, while lower pattern orders would lead to a considerably faster convergence.
 \end{minipage}
 \end{center}
 
 
 
 \noindent
-{\sf 1- Please, provide References for the sentences: 
+{\sf 3- Please, provide References for the sentences: 
 
 " In general, temperature records like those used here are characterized by some irregular alternation between colder and warmer phases due to large-scale atmospheric patterns (corresponding to high and low pressure centers, respectively), which in the case of western-to- central Europe travel in the majority of situations in eastward direction." 
 
@@ -160,7 +147,7 @@ We have included the discussion as suggested, in particular the results are reli
 
 \begin{center}
 \begin{minipage}[c]{0.9\textwidth}
-In the revision, we have included the proper reference when discussing this coupling delay, which can be attributed to teleconnections that two geological distant places are interacted via atmospheric circulations. 
+In the revision, we have included some further discussion and references along with these two sentences.
 \end{minipage}
 \end{center}
 
