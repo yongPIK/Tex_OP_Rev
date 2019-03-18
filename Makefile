@@ -32,8 +32,8 @@ full : full_revision clean
 
 full_revision : $(SRCS)
 	$(LATEX)  $(SRCNAME)		 # Create   *.aux
-	$(BIBTEX) $(SRCNAME)
-	$(LATEX)  $(SRCNAME)		 # Finalize *.aux
+#	$(BIBTEX) $(SRCNAME)
+#	$(LATEX)  $(SRCNAME)		 # Finalize *.aux
 	$(LATEX)  $(SRCNAME)
 #	$(LATEX)  $(SRCNAME)
 #	$(DVIPS) -o $(TARGET) $(SRCNAME)       # Create .ps from .dvi

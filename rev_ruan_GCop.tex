@@ -261,14 +261,13 @@ We choose four representative coupling strengths ($\mu = 0.2, 0.3, 0.4$ and $0.5
 {\color{red}In order to further study such finite sample size effects on the obtained complexity measures, we reconsider the coupled stochastic processes from Sec.~\ref{sec:GCs} and choose two specific time lags $\tau$, one corresponding to the position of the maximal values of $\sigma$ and KLD (minimal value of $H$) indicating some relevant interaction, while the other is coinciding with the position of some non-causal delay with small $\sigma$ and KLD value (large value of $H$). In the following, we report the numerical results for the KLD measure only since this discriminator should not be affected by non-uniform pattern frequency distributions. However, similar results can be obtained for the other two measures (i.e., $\sigma_{X\to Y}$ and $H_{X\to Y}$), as it is shown in Figs.~S1 and S2 in the Supplementary Materials (SM) accompanying this manuscript.}
 
 For all four previously studied systems, we observe different asymptotic behaviors of KLD at the two \textcolor{red}{selected} delays. Notably, when increasing the time series length $N$, the KLD values at the \textcolor{red}{actual interaction} delays show convergence to non-zero values, while dropping \textcolor{red}{towards} zero approximately as $1/N$ at the non-causal delays. This feature is clearly visible for all four stochastic processes with both, unidirectional and bidirectional coupling as shown in Fig. \ref{fig:sampleSizeBCDE}. 
-
 \begin{figure}
 	\centering
 	\includegraphics[width=\columnwidth]{kld_lengthBCDE.eps}
 \caption{(Color online) Double logarithmic plot \textcolor{red}{(logarithms with respect to base 10)} of the dependence of KLD on the sample size $N$ for the optimal (causal) lags (blue/red) and some non-causal lag (black) for the four cases of coupled linear-stochastic systems: (a) Eq.~\eqref{eq:B} (unidirectional), (b) Eq.~\eqref{eq:C} (unidirectional), (c) Eq.~\eqref{eq:D} (symmetric bidirectional), (d) Eq.~\eqref{eq:E} (asymmetric bidirectional). In (c,d), the values for both causal delays are shown. Errorbars correspond to the standard deviation (linear scale) over 20 independent realizations.  \label{fig:sampleSizeBCDE}}
 \end{figure}
 
-{\color{red}In all cases, our convergence results are reliable if the time series length is larger than $N \gtrsim 10,000$, which may exceed the typical lengths of real-world observational time series. The main reason for this is the selected pattern order of $D=5$, which calls for $D!=120$ different nodes and, hence, $(D!)^2=14,400$ possible pairs of patterns for which mutual co-occurrence frequencies need to be estimated from the available data. For smaller pattern orders, much earlier convergence is found (see Figs.~S3--S5 in the SM), which may however come at the cost of less accuracy in the task of discriminating between actual and possibly spurious interaction delays.}  
+{\color{red}In all cases, our convergence results are reliable if the time series length is larger than $N \gtrsim 10^4$, which may exceed the typical lengths of real-world observational time series. The main reason for this is the selected pattern order of $D=5$, which calls for $D!=120$ different nodes and, hence, $(D!)^2=14,400$ possible pairs of patterns for which mutual co-occurrence frequencies need to be estimated from the available data. For smaller pattern orders, much earlier convergence is found (see Figs.~S3--S5 in the SM), which may however come at the cost of less accuracy in the task of discriminating between actual and possibly spurious interaction delays.}  
 
 Qualitatively equivalent results \textcolor{red}{are} obtained for the two coupled chaotic H\'enon maps from Sec.~\ref{sec:henon} as shown in Fig.~\ref{fig:sampleSizeHenon}. Here, we have again studied four different values of the coupling strength, $\mu = 0.2$, $0.3$, $0.4$ and $0.5$, and chosen the coupling delays based on the results of Fig.~\ref{fig:stdHeqXY}, corresponding to the respective maximum KLD values on the one hand, and some non-causal delay with low value of KLD on the other hand. {\color{red}As for the previously considered cases of coupled stochastic processes, the convergence results are reliable for time series of length $N \gtrsim 10^4$. A special case arises for} the rather weak coupling \textcolor{red}{of} $\mu = 0.2$, \textcolor{red}{where} the different convergence behavior of KLD \textcolor{red}{gets only} visible for $N \gtrsim 10^6$. {\color{red}Similar results have been obtained for $\sigma_{X\to Y}$ and $H_{X\to Y}$, as shown in Figs.~S6 and S7 in the SM. Again, reducing the pattern order leads to faster convergence of all three OPTN based measures for the true coupling delays, but on the cost of generally larger uncertainty (see Figs.~S8--S10 in the SM for the corresponding results for $D=4$).}
 \begin{figure}
@@ -310,6 +309,660 @@ Further open challenges along these lines of research include, but are not limit
 Parts of this work have been financially supported by the National Natural Science Foundation of China (Grant No. 11872182, 11875132, and 11835003) and the Natural Science Foundation of Shanghai (Grant No. 17ZR1444800 and 18ZR1411800). RVD acknowledges funding by the IRTG 1740/TRP 2011/50151-0 (funded by the DFG and FAPESP) and by the German Federal Ministry for Education and Research (BMBF) via the BMBF Young Investigators Group $\text{CoSy-CC}^2$: Complex Systems Approaches to Understanding Causes and Consequences of Past, Present and Future Climate Change (grant no. 01LN1306A).
 
 %\bibliographystyle{unsrt}
-\bibliography{PhysRep2018N,ref_Zhang,ref_reik}
+%\bibliography{PhysRep2018N,ref_Zhang,ref_reik}
+%merlin.mbs aipnum4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (1) range
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{49}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Bradley}\ and\ \citenamefont
+  {Kantz}(2015)}]{Bradley2015c}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Bradley}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Kantz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Nonlinear
+  time-series analysis revisited}},}\ }\href {\doibase 10.1063/1.4917289}
+  {\bibfield  {journal} {\bibinfo  {journal} {Chaos}\ }\textbf {\bibinfo
+  {volume} {25}},\ \bibinfo {pages} {097610} (\bibinfo {year} {2015})},\
+  \Eprint {http://arxiv.org/abs/1503.07493} {arXiv:1503.07493} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kantz}\ and\ \citenamefont
+  {Schreiber}(2004)}]{Kantz97}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Kantz}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Schreiber}},\ }\href@noop {} {\emph {\bibinfo {title} {Nonlinear Time Series
+  Analysis}}},\ \bibinfo {edition} {2nd}\ ed.\ (\bibinfo  {publisher}
+  {Cambridge University Press, Cambridge},\ \bibinfo {year} {2004})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Zou}\ \emph {et~al.}(2019)\citenamefont {Zou},
+  \citenamefont {Donner}, \citenamefont {Marwan}, \citenamefont {Donges},\ and\
+  \citenamefont {Kurths}}]{ZouPR2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Zou}}, \bibinfo {author} {\bibfnamefont {R.~V.}\ \bibnamefont {Donner}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Marwan}}, \bibinfo
+  {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Donges}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Complex network approaches to nonlinear time
+  series analysis},}\ }\href {\doibase 10.1016/j.physrep.2018.10.005}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physics Reports}\ }\textbf
+  {\bibinfo {volume} {787}},\ \bibinfo {pages} {1--97} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Marwan}\ \emph {et~al.}(2009)\citenamefont {Marwan},
+  \citenamefont {Donges}, \citenamefont {Zou}, \citenamefont {Donner},\ and\
+  \citenamefont {Kurths}}]{Marwan2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Marwan}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Donges}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zou}}, \bibinfo {author}
+  {\bibfnamefont {R.~V.}\ \bibnamefont {Donner}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Complex network approach for recurrence analysis of time
+  series}},}\ }\href {\doibase 10.1016/j.physleta.2009.09.042} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Lett. A}\ }\textbf {\bibinfo {volume}
+  {373}},\ \bibinfo {pages} {4246--4254} (\bibinfo {year} {2009})},\ \Eprint
+  {http://arxiv.org/abs/0907.3368} {arXiv:0907.3368} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Donner}\ \emph {et~al.}(2010)\citenamefont {Donner},
+  \citenamefont {Zou}, \citenamefont {Donges}, \citenamefont {Marwan},\ and\
+  \citenamefont {Kurths}}]{Donner2010NJP}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~V.}\ \bibnamefont
+  {Donner}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zou}},
+  \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Donges}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Marwan}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Recurrence networks -- {A} novel paradigm for nonlinear
+  time series analysis},}\ }\href {\doibase 10.1088/1367-2630/12/3/033025}
+  {\bibfield  {journal} {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo
+  {volume} {12}},\ \bibinfo {pages} {033025} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lacasa}\ \emph {et~al.}(2008)\citenamefont {Lacasa},
+  \citenamefont {Luque}, \citenamefont {Ballesteros}, \citenamefont {Luque},\
+  and\ \citenamefont {Nuno}}]{Lacasa2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Lacasa}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Luque}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Ballesteros}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Luque}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.~C.}\ \bibnamefont {Nuno}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{From time series to complex networks: The visibility
+  graph}},}\ }\href {\doibase 10.1073/pnas.0709247105} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proc. Natl. Acad. Sci.}\ }\textbf {\bibinfo {volume}
+  {105}},\ \bibinfo {pages} {4972--4975} (\bibinfo {year} {2008})},\ \Eprint
+  {http://arxiv.org/abs/0810.0920} {arXiv:0810.0920} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nicolis}, \citenamefont {Cantu},\ and\ \citenamefont
+  {Nicolis}(2005)}]{Nicolis2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Nicolis}}, \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Cantu}},
+  \ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Nicolis}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Dynamical aspects of
+  interaction networks}},}\ }\href {\doibase 10.1142/S0218127405014167}
+  {\bibfield  {journal} {\bibinfo  {journal} {Int. J. Bifurc. Chaos}\ }\textbf
+  {\bibinfo {volume} {15}},\ \bibinfo {pages} {3467--3480} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McCullough}\ \emph {et~al.}(2015)\citenamefont
+  {McCullough}, \citenamefont {Small}, \citenamefont {Stemler},\ and\
+  \citenamefont {Iu}}]{McCullough2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {McCullough}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Small}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Stemler}}, \ and\
+  \bibinfo {author} {\bibfnamefont {H.~H.-H.}\ \bibnamefont {Iu}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {{Time lagged ordinal partition networks
+  for capturing dynamics of continuous dynamical systems}},}\ }\href {\doibase
+  10.1063/1.4919075} {\bibfield  {journal} {\bibinfo  {journal} {Chaos}\
+  }\textbf {\bibinfo {volume} {25}},\ \bibinfo {pages} {053101} (\bibinfo
+  {year} {2015})},\ \Eprint {http://arxiv.org/abs/arXiv:1501.06656v1}
+  {arXiv:arXiv:1501.06656v1} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ and\ \citenamefont
+  {Small}(2006)}]{Zhang2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Zhang}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Small}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Complex Network from
+  Pseudoperiodic Time Series: Topology versus Dynamics}},}\ }\href {\doibase
+  10.1103/PhysRevLett.96.238701} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo {pages}
+  {238701} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Donges}\ \emph {et~al.}(2011)\citenamefont {Donges},
+  \citenamefont {Donner}, \citenamefont {Trauth}, \citenamefont {Marwan},
+  \citenamefont {Schellnhuber},\ and\ \citenamefont {Kurths}}]{Donges2011PNAS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Donges}}, \bibinfo {author} {\bibfnamefont {R.~V.}\ \bibnamefont {Donner}},
+  \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Trauth}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Marwan}}, \bibinfo {author}
+  {\bibfnamefont {H.~J.}\ \bibnamefont {Schellnhuber}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Nonlinear detection of paleoclimate-variability
+  transitions possibly related to human evolution},}\ }\href {\doibase
+  10.1073/pnas.1117052108} {\bibfield  {journal} {\bibinfo  {journal} {Proc.
+  Natl. Acad. Sci. USA}\ }\textbf {\bibinfo {volume} {108}},\ \bibinfo {pages}
+  {20422--20427} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Elsner}, \citenamefont {Jagger},\ and\ \citenamefont
+  {Fogarty}(2009)}]{Elsner2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~B.}\ \bibnamefont
+  {Elsner}}, \bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont {Jagger}},
+  \ and\ \bibinfo {author} {\bibfnamefont {E.~a.}\ \bibnamefont {Fogarty}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Visibility network of
+  United States hurricanes}},}\ }\href {\doibase 10.1029/2009GL039129}
+  {\bibfield  {journal} {\bibinfo  {journal} {Geophys. Res. Lett.}\ }\textbf
+  {\bibinfo {volume} {36}},\ \bibinfo {pages} {L16702} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schleussner}\ \emph {et~al.}(2015)\citenamefont
+  {Schleussner}, \citenamefont {Divine}, \citenamefont {Donges}, \citenamefont
+  {Miettinen},\ and\ \citenamefont {Donner}}]{schleussner2015indications}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.-F.}\ \bibnamefont
+  {Schleussner}}, \bibinfo {author} {\bibfnamefont {D.~V.}\ \bibnamefont
+  {Divine}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Donges}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Miettinen}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.~V.}\ \bibnamefont {Donner}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {{Indications for a North Atlantic ocean
+  circulation regime shift at the onset of the Little Ice Age}},}\ }\href
+  {\doibase 10.1007/s00382-015-2561-x} {\bibfield  {journal} {\bibinfo
+  {journal} {Clim. Dyn.}\ }\textbf {\bibinfo {volume} {45}},\ \bibinfo {pages}
+  {3623--3633} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}, \citenamefont {Zhou},\ and\ \citenamefont
+  {Yuan}(2010)}]{Liu2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {W.-X.}\ \bibnamefont {Zhou}}, \
+  and\ \bibinfo {author} {\bibfnamefont {W.-K.}\ \bibnamefont {Yuan}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Statistical properties of
+  visibility graph of energy dissipation rates in three-dimensional fully
+  developed turbulence},}\ }\href {\doibase 10.1016/j.physa.2010.02.043}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physica A}\ }\textbf {\bibinfo
+  {volume} {389}},\ \bibinfo {pages} {2675--2681} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {G{\'{o}}rski}\ \emph {et~al.}(2015)\citenamefont
+  {G{\'{o}}rski}, \citenamefont {Litak}, \citenamefont {Mosdorf},\ and\
+  \citenamefont {Rysak}}]{Gorski2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {G{\'{o}}rski}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Litak}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mosdorf}}, \ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Rysak}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {{Two phase flow bifurcation due to
+  turbulence: transition from slugs to bubbles}},}\ }\href {\doibase
+  10.1140/epjb/e2015-60245-8} {\bibfield  {journal} {\bibinfo  {journal} {Eur.
+  Phys. J. B}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo {pages} {239}
+  (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gao}\ \emph {et~al.}(2015)\citenamefont {Gao},
+  \citenamefont {Yang}, \citenamefont {Fang}, \citenamefont {Zou},
+  \citenamefont {Xia},\ and\ \citenamefont {Du}}]{Gao2015a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.-K.}\ \bibnamefont
+  {Gao}}, \bibinfo {author} {\bibfnamefont {Y.-X.}\ \bibnamefont {Yang}},
+  \bibinfo {author} {\bibfnamefont {P.-C.}\ \bibnamefont {Fang}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Zou}}, \bibinfo {author}
+  {\bibfnamefont {C.-Y.}\ \bibnamefont {Xia}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Du}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Multiscale complex network for analyzing experimental
+  multivariate time series}},}\ }\href {\doibase 10.1209/0295-5075/109/30005}
+  {\bibfield  {journal} {\bibinfo  {journal} {EPL (Europhysics Lett.}\ }\textbf
+  {\bibinfo {volume} {109}},\ \bibinfo {pages} {30005} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gao}\ \emph {et~al.}(2016)\citenamefont {Gao},
+  \citenamefont {Yang}, \citenamefont {Cai}, \citenamefont {Zhang},\ and\
+  \citenamefont {Jin}}]{Gao2016b}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.-K.}\ \bibnamefont
+  {Gao}}, \bibinfo {author} {\bibfnamefont {Y.-X.}\ \bibnamefont {Yang}},
+  \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Cai}}, \bibinfo {author}
+  {\bibfnamefont {S.-S.}\ \bibnamefont {Zhang}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {N.-D.}\ \bibnamefont {Jin}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Multivariate weighted recurrence network inference for
+  uncovering oil-water transitional flow behavior in a vertical pipe}},}\
+  }\href {\doibase 10.1063/1.4954271} {\bibfield  {journal} {\bibinfo
+  {journal} {Chaos}\ }\textbf {\bibinfo {volume} {26}},\ \bibinfo {pages}
+  {063117} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Manshour}, \citenamefont {{Rahimi Tabar}},\ and\
+  \citenamefont {Peinke}(2015)}]{Manshour2015a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Manshour}}, \bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont {{Rahimi
+  Tabar}}}, \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Peinke}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Fully developed
+  turbulence in the view of horizontal visibility graphs}},}\ }\href {\doibase
+  10.1088/1742-5468/2015/08/P08031} {\bibfield  {journal} {\bibinfo  {journal}
+  {J. Stat. Mech. Theory Exp.}\ }\textbf {\bibinfo {volume} {2015}},\ \bibinfo
+  {pages} {P08031} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ram{\'{i}}rez {\'{A}}vila}}\ \emph
+  {et~al.}(2013)\citenamefont {{Ram{\'{i}}rez {\'{A}}vila}}, \citenamefont
+  {Gapelyuk}, \citenamefont {Marwan}, \citenamefont {Stepan}, \citenamefont
+  {Kurths}, \citenamefont {Walther},\ and\ \citenamefont
+  {Wessel}}]{Ramirez2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~M.}\ \bibnamefont
+  {{Ram{\'{i}}rez {\'{A}}vila}}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Gapelyuk}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Marwan}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Stepan}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Kurths}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Walther}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Wessel}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{Classifying healthy women and preeclamptic patients from cardiovascular
+  data using recurrence and complex network methods}},}\ }\href {\doibase
+  10.1016/j.autneu.2013.05.003} {\bibfield  {journal} {\bibinfo  {journal}
+  {Auton. Neurosci. Basic Clin.}\ }\textbf {\bibinfo {volume} {178}},\ \bibinfo
+  {pages} {103--110} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Subramaniyam}, \citenamefont {Donges},\ and\
+  \citenamefont {Hyttinen}(2015)}]{Subramaniyam2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~P.}\ \bibnamefont
+  {Subramaniyam}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Donges}}, \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Hyttinen}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Signatures of
+  chaotic and stochastic dynamics uncovered with $\epsilon$ -recurrence
+  networks}},}\ }\href {\doibase 10.1098/rspa.2015.0349} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proc. R. Soc. A Math. Phys. Eng. Sci.}\ }\textbf
+  {\bibinfo {volume} {471}},\ \bibinfo {pages} {20150349} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Flanagan}\ and\ \citenamefont
+  {Lacasa}(2016)}]{Flanagan2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Flanagan}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Lacasa}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Irreversibility
+  of financial time series: A graph-theoretical approach}},}\ }\href {\doibase
+  10.1016/j.physleta.2016.03.011} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett. A}\ }\textbf {\bibinfo {volume} {380}},\ \bibinfo {pages}
+  {1689--1697} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/1601.01980} {arXiv:1601.01980} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zou}\ \emph {et~al.}(2014{\natexlab{a}})\citenamefont
+  {Zou}, \citenamefont {Small}, \citenamefont {Liu},\ and\ \citenamefont
+  {Kurths}}]{Zou2014a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Zou}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Small}}, \bibinfo
+  {author} {\bibfnamefont {Z.~H.}\ \bibnamefont {Liu}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {{Complex network approach to characterize the
+  statistical features of the sunspot series}},}\ }\href {\doibase
+  10.1088/1367-2630/16/1/013051} {\bibfield  {journal} {\bibinfo  {journal}
+  {New J. Phys.}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo {pages} {013051}
+  (\bibinfo {year} {2014}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zou}\ \emph {et~al.}(2014{\natexlab{b}})\citenamefont
+  {Zou}, \citenamefont {Donner}, \citenamefont {Marwan}, \citenamefont
+  {Small},\ and\ \citenamefont {Kurths}}]{Zou2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Zou}}, \bibinfo {author} {\bibfnamefont {R.~V.}\ \bibnamefont {Donner}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Marwan}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Small}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Kurths}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Long-term changes in the north–south asymmetry of solar
+  activity: a nonlinear dynamics characterization using visibility graphs}},}\
+  }\href {\doibase 10.5194/npg-21-1113-2014} {\bibfield  {journal} {\bibinfo
+  {journal} {Nonlinear Process. Geophys.}\ }\textbf {\bibinfo {volume} {21}},\
+  \bibinfo {pages} {1113--1126} (\bibinfo {year}
+  {2014}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schnakenberg}(1976)}]{Schnakenberg1976}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Schnakenberg}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Network
+  theory of microscopic and macroscopic behavior of master equation
+  systems}},}\ }\href {\doibase 10.1103/RevModPhys.48.571} {\bibfield
+  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume}
+  {48}},\ \bibinfo {pages} {571--585} (\bibinfo {year} {1976})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kulp}\ \emph
+  {et~al.}(2016{\natexlab{a}})\citenamefont {Kulp}, \citenamefont {Chobot},
+  \citenamefont {Freitas},\ and\ \citenamefont {Sprechini}}]{KulpChaos2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Kulp}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Chobot}},
+  \bibinfo {author} {\bibfnamefont {H.~R.}\ \bibnamefont {Freitas}}, \ and\
+  \bibinfo {author} {\bibfnamefont {G.~D.}\ \bibnamefont {Sprechini}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Using ordinal partition
+  transition networks to analyze ecg data},}\ }\href {\doibase
+  10.1063/1.4959537} {\bibfield  {journal} {\bibinfo  {journal} {Chaos}\
+  }\textbf {\bibinfo {volume} {26}},\ \bibinfo {pages} {073114} (\bibinfo
+  {year} {2016}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kulp}\ \emph
+  {et~al.}(2016{\natexlab{b}})\citenamefont {Kulp}, \citenamefont {Chobot},
+  \citenamefont {Niskala},\ and\ \citenamefont {Needhammer}}]{KulpChaos2016b}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Kulp}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Chobot}},
+  \bibinfo {author} {\bibfnamefont {B.~J.}\ \bibnamefont {Niskala}}, \ and\
+  \bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont {Needhammer}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Using forbidden ordinal
+  patterns to detect determinism in irregularly sampled time series},}\ }\href
+  {\doibase 10.1063/1.4941674} {\bibfield  {journal} {\bibinfo  {journal}
+  {Chaos}\ }\textbf {\bibinfo {volume} {26}},\ \bibinfo {pages} {023107}
+  (\bibinfo {year} {2016}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McCullough}\ \emph {et~al.}(2016)\citenamefont
+  {McCullough}, \citenamefont {Sakellariou}, \citenamefont {Stemler},\ and\
+  \citenamefont {Small}}]{McCulloughChaos2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {McCullough}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sakellariou}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Stemler}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Small}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Counting
+  forbidden patterns in irregularly sampled time series. I.} the effects of
+  under-sampling, random depletion, and timing jitter},}\ }\href {\doibase
+  10.1063/1.4968551} {\bibfield  {journal} {\bibinfo  {journal} {Chaos}\
+  }\textbf {\bibinfo {volume} {26}},\ \bibinfo {pages} {123103} (\bibinfo
+  {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sakellariou}\ \emph {et~al.}(2016)\citenamefont
+  {Sakellariou}, \citenamefont {McCullough}, \citenamefont {Stemler},\ and\
+  \citenamefont {Small}}]{SakellariouChaos2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sakellariou}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {McCullough}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Stemler}},
+  \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Small}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Counting forbidden patterns
+  in irregularly sampled time series. II. Reliability in the presence of highly
+  irregular sampling}},}\ }\href {\doibase 10.1063/1.4970483} {\bibfield
+  {journal} {\bibinfo  {journal} {Chaos}\ }\textbf {\bibinfo {volume} {26}},\
+  \bibinfo {pages} {123104} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bandt}\ and\ \citenamefont
+  {Pompe}(2002)}]{Bandt2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bandt}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Pompe}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Permutation Entropy: A
+  Natural Complexity Measure for Time Series}},}\ }\href {\doibase
+  10.1103/PhysRevLett.88.174102} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo {pages}
+  {174102} (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Daw}, \citenamefont {Finney},\ and\ \citenamefont
+  {Tracy}(2003)}]{Daw2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~S.}\ \bibnamefont
+  {Daw}}, \bibinfo {author} {\bibfnamefont {C.~E.~A.}\ \bibnamefont {Finney}},
+  \ and\ \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont {Tracy}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{A review of symbolic
+  analysis of experimental data}},}\ }\href {\doibase 10.1063/1.1531823}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rev. Sci. Instrum.}\ }\textbf
+  {\bibinfo {volume} {74}},\ \bibinfo {pages} {915--930} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Finn}\ \emph {et~al.}(2003)\citenamefont {Finn},
+  \citenamefont {Goettee}, \citenamefont {Toroczkai}, \citenamefont {Anghel},\
+  and\ \citenamefont {Wood}}]{Finn2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Finn}}, \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont {Goettee}},
+  \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Toroczkai}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Anghel}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {B.~P.}\ \bibnamefont {Wood}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Estimation of entropies and dimensions by nonlinear
+  symbolic time series analysis}},}\ }\href {\doibase 10.1063/1.1555471}
+  {\bibfield  {journal} {\bibinfo  {journal} {Chaos}\ }\textbf {\bibinfo
+  {volume} {13}},\ \bibinfo {pages} {444--456} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Amig{\'{o}}}(2010)}]{Amigo2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Amig{\'{o}}}},\ }\href {\doibase 10.1007/978-3-642-04084-9} {\emph {\bibinfo
+  {title} {Permut. Complex. Dyn. Syst.}}}\ (\bibinfo  {publisher} {Spinger,
+  Berlin/Heidelberg},\ \bibinfo {year} {2010})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McCullough}\ \emph {et~al.}(2017)\citenamefont
+  {McCullough}, \citenamefont {Small}, \citenamefont {Iu},\ and\ \citenamefont
+  {Stemler}}]{McCullough2017b}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {McCullough}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Small}},
+  \bibinfo {author} {\bibfnamefont {H.~H.~C.}\ \bibnamefont {Iu}}, \ and\
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Stemler}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {{Multiscale ordinal network analysis of
+  human cardiac dynamics}},}\ }\href {\doibase 10.1098/rsta.2016.0292}
+  {\bibfield  {journal} {\bibinfo  {journal} {Philos. Trans. R. Soc. A Math.
+  Phys. Eng. Sci.}\ }\textbf {\bibinfo {volume} {375}},\ \bibinfo {pages}
+  {20160292} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Martínez}, \citenamefont {Herrera-Diestra},\ and\
+  \citenamefont {Chavez}(2018)}]{Martinez2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont
+  {Martínez}}, \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Herrera-Diestra}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Chavez}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Detection of
+  time reversibility in time series by ordinal patterns analysis},}\ }\href
+  {\doibase 10.1063/1.5055855} {\bibfield  {journal} {\bibinfo  {journal}
+  {Chaos}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages} {123111}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2017)\citenamefont {Zhang},
+  \citenamefont {Zhou}, \citenamefont {Tang}, \citenamefont {Guo},
+  \citenamefont {Small},\ and\ \citenamefont {Zou}}]{zhangSciRep2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~Y.}\ \bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zhou}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Tang}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Guo}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Small}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Zou}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Constructing ordinal partition transition networks from multivariate time
+  series},}\ }\href {\doibase 10.1038/s41598-017-08245-x} {\bibfield  {journal}
+  {\bibinfo  {journal} {Scientific Reports}\ }\textbf {\bibinfo {volume} {7}},\
+  \bibinfo {pages} {7795} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Guo}\ \emph {et~al.}(2018)\citenamefont {Guo},
+  \citenamefont {Zhang}, \citenamefont {Zou},\ and\ \citenamefont
+  {Guan}}]{Guo2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Guo}}, \bibinfo {author} {\bibfnamefont {J.-Y.}\ \bibnamefont {Zhang}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zou}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {S.-G.}\ \bibnamefont {Guan}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {{Cross and joint ordinal partition transition
+  networks for multivariate time series analysis}},}\ }\href {\doibase
+  10.1007/s11467-018-0805-0} {\bibfield  {journal} {\bibinfo  {journal} {Front.
+  Phys.}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo {pages} {130508}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Coufal}\ \emph {et~al.}(2017)\citenamefont {Coufal},
+  \citenamefont {Jakubík}, \citenamefont {Jajcay}, \citenamefont {Hlinka},
+  \citenamefont {Krakovsk\'a},\ and\ \citenamefont {Palu\v{s}}}]{Coufal2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Coufal}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Jakubík}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Jajcay}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Hlinka}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Krakovsk\'a}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Palu\v{s}}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Detection of coupling delay: A problem not yet solved},}\
+  }\href {\doibase 10.1063/1.4997757} {\bibfield  {journal} {\bibinfo
+  {journal} {Chaos}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo {pages}
+  {083109} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Granger}(1969)}]{Granger1969}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.~J.}\
+  \bibnamefont {Granger}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Investigating causal relations by econometric models and cross-spectral
+  methods},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Econometrica}\ }\textbf {\bibinfo {volume} {37}},\ \bibinfo {pages}
+  {424--438} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ding}, \citenamefont {Chen},\ and\ \citenamefont
+  {Bressler}(2007)}]{Ding_Book_2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~Z.}\ \bibnamefont
+  {Ding}}, \bibinfo {author} {\bibfnamefont {Y.~H.}\ \bibnamefont {Chen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont {Bressler}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Granger Causality: Basic
+  Theory and Application to Neuroscience}},}\ }in\ \href@noop {} {\emph
+  {\bibinfo {booktitle} {Handb. Time Ser. Anal.}}},\ \bibinfo {editor} {edited
+  by\ \bibinfo {editor} {\bibfnamefont {B.}~\bibnamefont {Schelter}}, \bibinfo
+  {editor} {\bibfnamefont {M.}~\bibnamefont {Winterhalder}}, \ and\ \bibinfo
+  {editor} {\bibfnamefont {J.}~\bibnamefont {Timmer}}}\ (\bibinfo  {publisher}
+  {Wiley-VCH Verlag GmbH {\&} Co. KGaA},\ \bibinfo {year} {2007})\ pp.\
+  \bibinfo {pages} {437--460}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dhamala}, \citenamefont {Rangarajan},\ and\
+  \citenamefont {Ding}(2008)}]{Dhamala_prl2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Dhamala}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Rangarajan}},
+  \ and\ \bibinfo {author} {\bibfnamefont {M.~Z.}\ \bibnamefont {Ding}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Estimating Granger
+  Causality from Fourier and Wavelet Transforms of Time Series Data}},}\ }\href
+  {\doibase 10.1103/PhysRevLett.100.018701} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {100}},\ \bibinfo
+  {pages} {018701} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Takens}(1981)}]{Takens1981}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Takens}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Detecting
+  strange attractors in turbulence}},}\ }in\ \href {\doibase
+  10.1007/BFb0091924} {\emph {\bibinfo {booktitle} {Dynamical Systems and
+  Turbulence, Warwick 1980}}},\ \bibinfo {series} {Lecture Notes in
+  Mathematics}, Vol.\ \bibinfo {volume} {898},\ \bibinfo {editor} {edited by\
+  \bibinfo {editor} {\bibfnamefont {D.}~\bibnamefont {Rand}}\ and\ \bibinfo
+  {editor} {\bibfnamefont {L.-S.}\ \bibnamefont {Young}}}\ (\bibinfo
+  {publisher} {Springer, New York},\ \bibinfo {year} {1981})\ pp.\ \bibinfo
+  {pages} {366--381}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2018)\citenamefont {Li},
+  \citenamefont {Xiao}, \citenamefont {Zhou},\ and\ \citenamefont
+  {Cai}}]{LiPRE2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~T.}\ \bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {Y.~Y.}\ \bibnamefont {Xiao}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Zhou}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Cai}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Causal inference in nonlinear systems: Granger
+  causality versus time-delayed mutual information},}\ }\href {\doibase
+  10.1103/PhysRevE.97.052216} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. E}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {pages} {052216}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}\ and\ \citenamefont {Ouyang}(2010)}]{LiNI2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Li}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Ouyang}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Estimating coupling
+  direction between neuronal populations with permutation conditional mutual
+  information},}\ }\href {\doibase
+  https://doi.org/10.1016/j.neuroimage.2010.05.003} {\bibfield  {journal}
+  {\bibinfo  {journal} {NeuroImage}\ }\textbf {\bibinfo {volume} {52}},\
+  \bibinfo {pages} {497 -- 507} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schreiber}(2000)}]{schreiber_prl2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Schreiber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Measuring
+  Information Transfer}},}\ }\href {\doibase 10.1103/PhysRevLett.85.461}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {85}},\ \bibinfo {pages} {461--464} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Staniek}\ and\ \citenamefont
+  {Lehnertz}(2008)}]{Staniek2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Staniek}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Lehnertz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Symbolic
+  Transfer Entropy}},}\ }\href {\doibase 10.1103/PhysRevLett.100.158101}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {100}},\ \bibinfo {pages} {158101} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Romano}\ \emph {et~al.}(2007)\citenamefont {Romano},
+  \citenamefont {Thiel}, \citenamefont {Kurths},\ and\ \citenamefont
+  {Grebogi}}]{RomanoPRE2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont
+  {Romano}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Thiel}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kurths}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Grebogi}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Estimation of the direction of the coupling by
+  conditional probabilities of recurrence},}\ }\href {\doibase
+  10.1103/PhysRevE.76.036211} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. E}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo {pages} {036211}
+  (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rybski}, \citenamefont {Havlin},\ and\ \citenamefont
+  {Bunde}(2003)}]{Rybski2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Rybski}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Havlin}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bunde}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {Phase synchronization in temperature
+  and precipitation records},}\ }\href {\doibase
+  https://doi.org/10.1016/S0378-4371(02)01509-1} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physica A}\ }\textbf {\bibinfo {volume} {320}},\
+  \bibinfo {pages} {601 -- 610} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hannachi}, \citenamefont {Woollings},\ and\
+  \citenamefont {Fraedrich}(2012)}]{Hannachi2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hannachi}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Woollings}},
+  \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Fraedrich}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {The north atlantic jet
+  stream: a look at preferred positions, paths and transitions},}\ }\href
+  {\doibase 10.1002/qj.959} {\bibfield  {journal} {\bibinfo  {journal} {Quart.
+  J. R. Meteorol. Soc.}\ }\textbf {\bibinfo {volume} {138}},\ \bibinfo {pages}
+  {862--877} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Esteban}, \citenamefont {Martin-Vide},\ and\
+  \citenamefont {Mases}(2006)}]{Esteban2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Esteban}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Martin-Vide}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Mases}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Daily
+  atmospheric circulation catalogue for western Europe using multivariate
+  techniques}},}\ }\href {\doibase 10.1002/joc.1391} {\bibfield  {journal}
+  {\bibinfo  {journal} {Int. J. Climatol.}\ }\textbf {\bibinfo {volume} {26}},\
+  \bibinfo {pages} {1501--1515} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Koscielny–-Bunde}}\ \emph
+  {et~al.}(1998)\citenamefont {{Koscielny–-Bunde}}, \citenamefont {Roman},
+  \citenamefont {Bunde}, \citenamefont {Havlin},\ and\ \citenamefont
+  {Schellnhuber}}]{Bunde1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Koscielny–-Bunde}}}, \bibinfo {author} {\bibfnamefont {H.~E.}\
+  \bibnamefont {Roman}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bunde}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Havlin}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Schellnhuber}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Long-range power-law
+  correlations in local daily temperature fluctuations},}\ }\href {\doibase
+  10.1080/13642819808205026} {\bibfield  {journal} {\bibinfo  {journal} {Phil.
+  Mag. B}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo {pages} {1331--1340}
+  (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\end{thebibliography}%
 
 \end{document}
