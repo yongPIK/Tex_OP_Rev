@@ -20,7 +20,7 @@
 
 \title{Supplementary Materials: \\ Ordinal partition transition network based complexity measures for inferring coupling direction and delay from time series}
 
-\date{\today}
+%\date{\today}
 
 \maketitle
 
@@ -43,6 +43,32 @@
 \caption{Same as Fig.~\ref{fig:sampleSizeBCDEsigma}, but for the co-occurrence entropy $H_{X\to Y}(\tau)$. Note that for $D=5$, we expect a co-occurrence entropy $H_{X \to Y} \approx \log_2 (5!) \approx 6.9$ for two series of ordinal patterns that are obtained from two independent identically distributed noise processes. Considering this fact, we show the difference between our estimated $H_{X \to Y}$ values and that maximum value of 6.9, which yields similar asymptotic results as those for $\sigma_{X\to Y}$ and KLD. Notably, at the positions of non-causal delays, zero values of the aforesaid difference are expected asymptotically, while non-zero values appear at the positions of causal delays. \label{fig:sampleSizeBCDEentropy}}
 \end{figure}
 
+% where / How to put the case of D = 4? 
+% sigma
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4sigma_lengthBCDE.eps}
+\caption{Same as Fig. \ref{fig:sampleSizeBCDEsigma}, but for $D = 4$.   \label{fig:d4sampleSizeBCDEsigma}}
+\end{figure}
+
+% H
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4entropyH_lengthBCDE.eps}
+\caption{Same as Fig.~\ref{fig:sampleSizeBCDEentropy}, but for the $H_{X\to Y}(\tau)$ and $D=4$. Note that we expect a co-occurrence entropy $H_{X \to Y} \approx \log_2 (4!) \approx 4.585$ for two series of ordinal patterns that are obtained from two independent identically distributed noise processes. \label{fig:d4sampleSizeBCDEentropy}}
+\end{figure}
+
+% KLD? 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4kld_lengthBCDE.eps}
+\caption{(Color online) Same as Fig.~\ref{fig:sampleSizeBCDEsigma}, but for the KLD and $D = 4$.  \label{fig:d4sampleSizeBCDEkld}}
+\end{figure}
+
+% end of D = 4 stochastic models 
+
+
+% D = 5 for the Henon maps
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigma_lengthHenon.eps}
@@ -55,10 +81,36 @@
 \caption{Same as Fig.~\ref{fig:sampleSizeHenonsigma}, but for the co-occurrence entropy $H_{X\to Y}(\tau)$. \label{fig:sampleSizeHenonentropy}}
 \end{figure}
 
+% D = 4 for the Henon maps
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4sigma_lengthHenon.eps}
+\caption{Same as in Fig.~\ref{fig:sampleSizeHenonsigma} but for $\sigma_{X \to Y}$ and $D = 4$. \label{fig:d4sampleSizeHenonsigma}}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4entropyH_lengthHenon.eps}
+\caption{Same as in Fig.~\ref{fig:sampleSizeHenonsigma} but for $H_{X \to Y}$ and $D = 4$. \label{fig:d4sampleSizeHenonentropy}}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/d4kld_lengthHenon.eps}
+\caption{Same as in Fig.~\ref{fig:sampleSizeHenonsigma} but for KLD and $D = 4$. \label{fig:d4sampleSizeHenonkld}}
+\end{figure}
+
+% end of D = 4 
+
+
+% temperature records
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{/Users/yongzou/Documents/TimeSeries_Network/OrderPatternPermutation/RuanFiguresPlot2018/rev_Figures/sigentropy_lengthTemp.eps}
 \caption{Dependence of (a) $\sigma_{X\to Y}$ and (b) $H_{X\to Y}$ on the sample length $N$ at the optimal delay ($\tau=1$ day, blue) and some arbitrarily chosen large delay ($\tau=20$ days, black) for the real-world example of two temperature time series from Oxford ($X$) and Vienna ($Y$) as discussed in the main text. \label{fig:sampleSizeTempentropy}}
 \end{figure}
+
+
+% or we put all cases of D = 4 here? 
 
 \end{document}
